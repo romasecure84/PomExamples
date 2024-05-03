@@ -11,20 +11,21 @@ import java.time.Duration;
 
 public class BaseTest {
     WebDriver driver;
-    SoftAssert softAssert;
+    LoginPage loginPage;
+
     @BeforeClass
     public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
+        loginPage = new LoginPage(driver);
         driver.manage().window().setSize(new Dimension(1382, 744));
         driver.manage().window().setPosition(new Point(-8, -8));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        softAssert=new SoftAssert();
     }
     @AfterClass
     public  void tearDown() throws InterruptedException {
         Thread.sleep(3000);
-        driver.quit();
-        softAssert.assertAll();
+        //driver.quit();
+        //softAssert.assertAll();
     }
 }
