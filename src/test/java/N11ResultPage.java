@@ -3,9 +3,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class N11ResultPage {
-    WebDriver driver;
-    By resultTextLocator=By.className("resultText");
-    By productNameLocator=By.className("productName");
+    private final WebDriver driver;
+    private final By resultTextLocator=By.xpath("//*[@class='resultText ']");
+    private final By productNameLocator=By.xpath("(//*[@class='columnContent'])[2]");
 
     public N11ResultPage(WebDriver driver){
         this.driver=driver;
