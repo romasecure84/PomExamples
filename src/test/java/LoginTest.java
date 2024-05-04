@@ -6,10 +6,8 @@ public class LoginTest extends BaseTest{
 
     @Test
     public void loginTest() {
-        driver.get("https://practicetestautomation.com/practice-test-login/");
-        loginPage.enterUsername("student");
-        loginPage.enterPassword("Password123");
-        loginPage.clickSubmitButton();
+        driver.get("https://n11.com");
+
 //        WebElement successMes=driver.findElement(By.xpath("//*[text()='Logged In Successfully']"));
 //        Assert.assertTrue(successMes.isDisplayed());
     }
