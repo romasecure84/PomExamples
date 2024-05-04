@@ -1,16 +1,21 @@
+package tests;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
+import pages.N11ProductDetailPage;
+import pages.N11ResultPage;
+import pages.N11TabBarPage;
 
-public class N11Test extends BaseTest{
+public class N11Test extends BaseTest {
     N11TabBarPage tabBarPage;
     N11ResultPage resultPage;
     N11ProductDetailPage productDetailPage;
     @Test(priority = 1)
     public void searchTest() {
-        driver.get("https://www.n11.com/");
         tabBarPage=new N11TabBarPage(driver);
+        tabBarPage.navigateTo("https://www.n11.com/");
         tabBarPage.search("laptop");
     }
 
@@ -28,6 +33,8 @@ public class N11Test extends BaseTest{
         productDetailPage=new N11ProductDetailPage(driver);
         tabBarPage=new N11TabBarPage(driver);
         productDetailPage.addToCard();
+//        JavascriptExecutor js = (JavascriptExecutor) driver;
+//        js.executeScript("window.scrollBy(0,700)");
         Thread.sleep(2000);
         Assert.assertTrue(tabBarPage.getBasketTotalNumber().equals("1"));
     }

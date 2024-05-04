@@ -1,3 +1,5 @@
+package tests;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
@@ -24,7 +26,6 @@ public class BaseTest {
     @AfterClass
     public  void tearDown() throws InterruptedException {
         Thread.sleep(3000);
-        //softAssert.assertAll();
         driver.quit();
 
     }

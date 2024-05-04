@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a3d3775-b17d-479f-b87c-4b361bf6e6b8" name="Changes" comment="productdetail ve result page class'lari yaradildi">
-      <change afterPath="$PROJECT_DIR$/src/test/java/N11Test.java" afterDir="false" />
+    <list default="true" id="5a3d3775-b17d-479f-b87c-4b361bf6e6b8" name="Changes" comment="Test class'i yaradildi ve yoxlanildi">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/N11ProductDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/N11ProductDetailPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/N11ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/N11ResultPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/N11TabBarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/N11TabBarPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/N11ProductDetailPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/N11ProductDetailPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/N11ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/N11ResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/N11TabBarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/N11TabBarPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/N11Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/N11Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,17 +51,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.LoginTest.loginTest.executor": "Run",
-    "TestNG.N11Test.executor": "Run",
-    "TestNG.N11Test.resultPageTest.executor": "Run",
-    "TestNG.N11Test.searchTest.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.LoginTest.loginTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.N11Test.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.N11Test.resultPageTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.N11Test.searchTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -68,7 +71,7 @@
     <configuration name="LoginTest.loginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PomExamples" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTest" />
       <option name="METHOD_NAME" value="loginTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -80,7 +83,7 @@
     <configuration name="N11Test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PomExamples" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="N11Test" />
+      <option name="MAIN_CLASS_NAME" value="tests.N11Test" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -91,7 +94,7 @@
     <configuration name="N11Test.searchTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PomExamples" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="N11Test" />
+      <option name="MAIN_CLASS_NAME" value="tests.N11Test" />
       <option name="METHOD_NAME" value="searchTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -149,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714844947431</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Test class'i yaradildi ve yoxlanildi">
+      <option name="closed" value="true" />
+      <created>1714848400537</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714848400537</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,6 +170,7 @@
     <MESSAGE value="Lazimi class'lar elave edildi" />
     <MESSAGE value="TabBarPage yaradildi" />
     <MESSAGE value="productdetail ve result page class'lari yaradildi" />
-    <option name="LAST_COMMIT_MESSAGE" value="productdetail ve result page class'lari yaradildi" />
+    <MESSAGE value="Test class'i yaradildi ve yoxlanildi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test class'i yaradildi ve yoxlanildi" />
   </component>
 </project>

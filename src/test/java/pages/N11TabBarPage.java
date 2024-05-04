@@ -1,15 +1,16 @@
+package pages;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-public class N11TabBarPage{
-    private final WebDriver driver;
+public class N11TabBarPage extends BasePage{
 
     private final By searchBoxLocator=By.id("searchData");
     private final By basketTotalNumberLocator=By.className("basketTotalNum");
 
     public N11TabBarPage(WebDriver driver){
-        this.driver=driver;
+        super(driver);
     }
 
     public void search(String searchKey){

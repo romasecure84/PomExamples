@@ -1,14 +1,15 @@
+package pages;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class N11ResultPage {
-    private final WebDriver driver;
+public class N11ResultPage extends BasePage{
     private final By resultTextLocator=By.xpath("//*[@class='resultText ']");
     private final By productNameLocator=By.xpath("(//*[@class='columnContent'])[2]");
 
     public N11ResultPage(WebDriver driver){
-        this.driver=driver;
+        super(driver);
     }
 
     public WebElement getResultWE(){
